@@ -12,11 +12,9 @@ URL:		http://pypi.python.org/pypi/pyquery
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools-devel
 BuildRequires:	rpm-pythonprov
-# if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
-#Requires:		python-libs
+Requires:	python-lxml
 Requires:	python-modules
-#BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

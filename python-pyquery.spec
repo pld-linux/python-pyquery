@@ -50,6 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{py_sitedir}/%{module}
 %{py_sitedir}/%{module}/*.py[co]
 %if "%{py_ver}" > "2.4"
 %{py_sitedir}/pyquery-*.egg-info

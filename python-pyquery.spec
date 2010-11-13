@@ -3,7 +3,7 @@ Summary:	PyQuery - A jquery-like library for python
 Summary(pl.UTF-8):	PyQuery
 Name:		python-%{module}
 Version:	0.3.1
-Release:	5
+Release:	6
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/p/pyquery/%{module}-%{version}.tar.gz

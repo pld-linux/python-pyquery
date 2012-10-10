@@ -9,13 +9,13 @@ Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/p/pyquery/%{module}-%{version}.tar.gz
 # Source0-md5:	f4564c372e3905772d0fe094bc00baf6
 URL:		http://pypi.python.org/pypi/pyquery
-BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-cssselect
 Requires:	python-lxml
 Requires:	python-modules
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,6 @@ do szybkiej manipulacji plików XML i HTML.
 %setup -q -n %{module}-%{version}
 
 %build
-export CFLAGS="%{rpmcflags}"
 %{__python} setup.py build
 
 %install

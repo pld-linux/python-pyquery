@@ -49,9 +49,9 @@ lxml do szybkiej manipulacji plików XML i HTML.
 Summary:	A jquery-like library for Python
 Summary(pl.UTF-8):	Podobna do jquery biblioteka dla Pythona
 Group:		Libraries/Python
-Requires:	python-cssselect
-Requires:	python-lxml
-Requires:	python-modules
+Requires:	python3-cssselect
+Requires:	python3-lxml
+Requires:	python3-modules
 
 %description -n python3-%{module}
 Pyquery allows you to make jquery queries on xml documents. The API is

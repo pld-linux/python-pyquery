@@ -19,15 +19,23 @@ URL:		http://pypi.python.org/pypi/pyquery
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %if %{with python2}
-%{?with_tests:BuildRequires:       python-cssselect}
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
+%if %{with tests}
+BuildRequires:       python-WebOb
+BuildRequires:       python-webtest
+BuildRequires:       python-cssselect
+%endif
 %endif
 %if %{with python3}
-%{?with_tests:BuildRequires:       python3-cssselect}
 BuildRequires:	python3-devel
 BuildRequires:	python3-modules
 BuildRequires:	python3-setuptools
+%if %{with tests}
+BuildRequires:       python3-WebOb
+BuildRequires:       python3-webtest
+BuildRequires:       python3-cssselect
+%endif
 %endif
 Requires:	python-cssselect
 Requires:	python-lxml

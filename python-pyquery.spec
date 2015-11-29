@@ -17,7 +17,7 @@ Source0:	https://github.com/gawel/pyquery/archive/%{version}.tar.gz
 # Source0-md5:	902e2ded38899c7c3f66cba6d4a464fb
 URL:		http://pypi.python.org/pypi/pyquery
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %if %{with python2}
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools

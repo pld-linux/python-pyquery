@@ -1,9 +1,10 @@
+#
 # Conditional build:
 %bcond_without  doc             # don't build doc
 %bcond_without  tests   # do not perform "make test"
 %bcond_without  python2 # CPython 2.x module
 %bcond_without  python3 # CPython 3.x module
-#
+
 %define 	module	pyquery
 Summary:	A jquery-like library for Python
 Summary(pl.UTF-8):	Podobna do jquery biblioteka dla Pythona
@@ -22,9 +23,9 @@ BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 %if %{with tests}
-BuildRequires:       python-WebOb
-BuildRequires:       python-webtest
-BuildRequires:       python-cssselect
+BuildRequires:	python-WebOb
+BuildRequires:	python-cssselect
+BuildRequires:	python-webtest
 %endif
 %endif
 %if %{with python3}
@@ -32,9 +33,9 @@ BuildRequires:	python3-devel
 BuildRequires:	python3-modules
 BuildRequires:	python3-setuptools
 %if %{with tests}
-BuildRequires:       python3-WebOb
-BuildRequires:       python3-webtest
-BuildRequires:       python3-cssselect
+BuildRequires:	python3-WebOb
+BuildRequires:	python3-cssselect
+BuildRequires:	python3-webtest
 %endif
 %endif
 Requires:	python-cssselect
@@ -104,9 +105,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %dir %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}/*.py[co]
-%if "%{py_ver}" > "2.4"
 %{py_sitescriptdir}/pyquery-*.egg-info
-%endif
 %endif
 
 %if %{with python3}

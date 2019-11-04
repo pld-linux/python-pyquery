@@ -5,12 +5,12 @@
 %bcond_without	python2	# CPython 2.x module
 %bcond_without	python3	# CPython 3.x module
 
-%define 	module	pyquery
+%define		module	pyquery
 Summary:	A jquery-like library for Python
 Summary(pl.UTF-8):	Podobna do jquery biblioteka dla Pythona
 Name:		python-%{module}
 Version:	1.4.0
-Release:	2
+Release:	3
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pyquery/
@@ -146,5 +146,5 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with doc}
 %files apidocs
 %defattr(644,root,root,755)
-%doc docs/_build/html/{_modules,_static,*.html,*.js}
+%doc docs/_build/html/{_static,*.html,*.js}
 %endif

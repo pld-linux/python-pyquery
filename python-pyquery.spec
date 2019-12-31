@@ -9,13 +9,13 @@
 Summary:	A jquery-like library for Python
 Summary(pl.UTF-8):	Podobna do jquery biblioteka dla Pythona
 Name:		python-%{module}
-Version:	1.4.0
-Release:	3
+Version:	1.4.1
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pyquery/
 Source0:	http://files.pythonhosted.org/packages/source/p/pyquery/%{module}-%{version}.tar.gz
-# Source0-md5:	a4aec587d6dcb01cf6fb7564bcedd2b7
+# Source0-md5:	7445c6de6db6618bf0670f624f2a82d4
 URL:		http://pypi.org/project/pyquery/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
@@ -31,7 +31,7 @@ BuildRequires:	python-webtest
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3-devel >= 1:3.3
+BuildRequires:	python3-devel >= 1:3.5
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-WebOb
@@ -62,7 +62,7 @@ lxml do szybkiej manipulacji plików XML i HTML.
 Summary:	A jquery-like library for Python
 Summary(pl.UTF-8):	Podobna do jquery biblioteka dla Pythona
 Group:		Libraries/Python
-Requires:	python3-modules >= 1:3.3
+Requires:	python3-modules >= 1:3.5
 
 %description -n python3-%{module}
 Pyquery allows you to make jquery queries on xml documents. The API is

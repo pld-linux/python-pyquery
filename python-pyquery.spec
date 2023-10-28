@@ -9,14 +9,15 @@
 Summary:	A jquery-like library for Python
 Summary(pl.UTF-8):	Podobna do jquery biblioteka dla Pythona
 Name:		python-%{module}
+# keep 1.4.1 here for python2 support
 Version:	1.4.1
 Release:	4
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pyquery/
-Source0:	http://files.pythonhosted.org/packages/source/p/pyquery/%{module}-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/source/p/pyquery/%{module}-%{version}.tar.gz
 # Source0-md5:	7445c6de6db6618bf0670f624f2a82d4
-URL:		http://pypi.org/project/pyquery/
+URL:		https://pypi.org/project/pyquery/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}

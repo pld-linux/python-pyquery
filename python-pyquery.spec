@@ -11,7 +11,7 @@ Summary(pl.UTF-8):	Podobna do jquery biblioteka dla Pythona
 Name:		python-%{module}
 # keep 1.4.1 here for python2 support
 Version:	1.4.1
-Release:	4
+Release:	5
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pyquery/
